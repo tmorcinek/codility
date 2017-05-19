@@ -8,7 +8,6 @@ import java.util.Set;
  */
 public class OddOccurrencesInArrayJava implements Solution {
 
-    @Override
     public int solution(int[] A) {
         Set<Integer> set = new HashSet<>();
         for (int value : A) {
