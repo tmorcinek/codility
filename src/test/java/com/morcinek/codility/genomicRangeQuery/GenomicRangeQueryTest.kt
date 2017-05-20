@@ -45,4 +45,13 @@ abstract class GenomicRangeQueryTest {
         assertEquals(listOf(4), solution.toList())
     }
 
+    @Test
+    fun manyGees() {
+        val S = (1..100000).map { "G" }.reduce { first, second -> "$first$second" }
+        val range = (1..50000).toList()
+        val solution = solution(S, range.toIntArray(), range.map { it + 1 }.toIntArray())
+
+        assertEquals(listOf(3), solution.toList())
+    }
+
 }
