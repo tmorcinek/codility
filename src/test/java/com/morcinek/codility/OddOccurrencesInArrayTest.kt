@@ -16,8 +16,8 @@ class OddOccurrencesInArrayTest {
 
     @Before
     fun setUp() {
-//        solution = OddOccurrencesInArrayJava()
-        solution = OddOccurrencesInArrayKotlin()
+        solution = OddOccurrencesInArrayJava()
+//        solution = OddOccurrencesInArrayKotlin()
     }
 
     @Test
